@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/help/main",
+    "pages/wallet/main",
+    "pages/me/main"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#28b1b0",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/help/main",
+        "iconPath": "/static/assets/images/tab/about-normal.png",
+        "selectedIconPath": "/static/assets/images/tab/about-active.png",
+        "text": "充电"
+      },
+      {
+        "pagePath": "pages/wallet/main",
+        "iconPath": "/static/assets/images/tab/tools-normal.png",
+        "selectedIconPath": "/static/assets/images/tab/tools-active.png",
+        "text": "钱包"
+      },
+      {
+        "pagePath":"pages/me/main",
+        "iconPath": "/static/assets/images/tab/coms-normal.png",
+        "selectedIconPath": "/static/assets/images/tab/coms-active.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

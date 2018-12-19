@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "帮助中心",
+  "usingComponents": {
+    "van-button": "/static/vant/button/index",
+    "van-collapse":"/static/vant/collapse/index",
+    "van-collapse-item":"/static/vant/collapse-item/index"
+  }
+}
