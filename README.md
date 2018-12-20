@@ -1,11 +1,12 @@
 # 充微信小程序
 
-### mpvue 小程序框架 vant-weapp ui框架
+### mpvue 小程序框架 vant-weapp ui框架 网络请求框架 flyio
 
  [mpvue 文档链接](http://mpvue.com)
  
  [vant-weapp ui文档链接](https://youzan.github.io/vant-weapp/#/intro)
  
+ [flyio文档链接](https://github.com/wendux/fly)
 
 ----- 
 
@@ -33,5 +34,15 @@ npm start 启动监听文件改动
 4. 关闭合法域名验证
 
 #### vant ui 体验小程序
-![vant-weapp](https://camo.githubusercontent.com/8259251e8b3b41536eb90545f0f7f1c366e60909/68747470733a2f2f696d672e797a63646e2e636e2f76616e742d77656170702f7172636f64652d3230313830383130313131342e6a7067)
+<img src="https://img.yzcdn.cn/vant-weapp/qrcode-201808101114.jpg" width="200" height="200" style="margin-top: 10px;" >
 
+### 项目中发起请求
+
+```
+this.$http.get(url).then(e=>{})
+```
+
+### 添加公共样式
+```
+index.vue中 使用 @import @/static/assets/css/public.css
+```
