@@ -84,22 +84,22 @@
                 //   path: "/search",
                 //   title: "Search 搜索"
                 // },
-                {
-                  path: "/slider",
-                  title: "Slider 滑块"
-                },
+                // {
+                //   path: "/slider",
+                //   title: "Slider 滑块"
+                // },
                 // {
                 //   path: "/stepper",
                 //   title: "Stepper 步进器"
                 // },
-                {
-                  path: "/switch",
-                  title: "Switch 开关"
-                },
-                {
-                  path: "/switch-cell",
-                  title: "SwitchCell 开关单元格"
-                }
+                // {
+                //   path: "/switch",
+                //   title: "Switch 开关"
+                // },
+                // {
+                //   path: "/switch-cell",
+                //   title: "SwitchCell 开关单元格"
+                // }
               ]
           }, {
             groupName: "反馈组件",
@@ -158,31 +158,31 @@
                 //   path: "/tag",
                 //   title: "Tag 标记"
                 // },
-                {
-                  path: "/tree-select",
-                  title: "TreeSelect 分类选择"
-                }
+                // {
+                //   path: "/tree-select",
+                //   title: "TreeSelect 分类选择"
+                // }
               ]
           }, {
             groupName: "导航组件",
             list:
               [
-                {
-                  path: "/badge",
-                  title: "Badge 徽章"
-                },
+                // {
+                //   path: "/badge",
+                //   title: "Badge 徽章"
+                // },
                 {
                   path: "/nav-bar",
                   title: "NavBar 导航栏"
                 },
-                {
-                  path: "/tab",
-                  title: "Tab 标签页"
-                },
-                {
-                  path: "/tabbar",
-                  title: "Tabbar 标签栏"
-                }
+                // {
+                //   path: "/tab",
+                //   title: "Tab 标签页"
+                // },
+                // {
+                //   path: "/tabbar",
+                //   title: "Tabbar 标签栏"
+                // }
               ]
           }, {
             groupName: "业务组件",

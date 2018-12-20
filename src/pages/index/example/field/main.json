@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Field 输入框",
+  "usingComponents": {
+    "demo-block": "/static/vant/demo-block/index",
+    "van-field": "/static/vant/field/index",
+    "van-cell-group": "/static/vant/cell-group/index"
+  }
+}
