@@ -13,7 +13,6 @@ export var link = Behavior({
       }
 
       var url = this.data[urlKey];
-
       if (url) {
         wx[this.data.linkType]({
           url: url

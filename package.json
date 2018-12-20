@@ -5,12 +5,6 @@
   "author": "zhangchaowei <withqianqian@163.com>",
   "private": true,
   "scripts": {
-    "dev:wx": "node build/dev-server.js wx",
-    "start:wx": "npm run dev:wx",
-    "build:wx": "node build/build.js wx",
-    "dev:swan": "node build/dev-server.js swan",
-    "start:swan": "npm run dev:swan",
-    "build:swan": "node build/build.js swan",
     "dev": "node build/dev-server.js wx",
     "start": "npm run dev",
     "build": "node build/build.js wx"
@@ -62,7 +56,8 @@
     "webpack-dev-middleware-hard-disk": "^1.12.0",
     "webpack-merge": "^4.1.0",
     "webpack-mpvue-asset-plugin": "^0.1.2",
-    "webpack-mpvue-vendor-plugin": "^0.0.1"
+    "webpack-mpvue-vendor-plugin": "^0.0.1",
+    "flyio": "^0.6.6"
   },
   "engines": {
     "node": ">= 4.0.0",

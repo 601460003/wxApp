@@ -1,7 +1,7 @@
 <template>
   <div>
     <van-cell title="充电密码自动锁定" icon="location">
-      <van-switch :check="checked" @change="onChange"/>
+      <van-switch :checked="checked" @change="onChange"/>
     </van-cell>
 
     <van-cell title="充电记录" icon="location" is-link/>
@@ -18,11 +18,11 @@
         checked: true
       };
     },
-    method:{
+    methods:{
       onChange() {
         this.checked = this.checked ? false : true;
       }
-    }
+    },
 
   };
 </script>

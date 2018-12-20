@@ -28,11 +28,20 @@ export default {
 
   methods: {
     onChange(e){
-      console.log(e)
       this.activeName = [e.target["1"]];
-
     }
   },
+  created(){
+    this.$http.get("m/me/getMe4m").then((d)=>{
+      //输出请求数据
+      console.log(d.data)
+      //输出响应头
+      console.log(d.header)
+    }).catch(err=>{
+      console.log(err.status,err.message)
+    })
+
+  }
 
 }
 </script>

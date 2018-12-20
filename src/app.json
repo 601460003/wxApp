@@ -1,8 +1,13 @@
 {
   "pages": [
+    "pages/index/example/dashboard/main",
+    "pages/index/example/button/main",
+    "pages/index/example/cell/main",
+    "pages/index/example/icon/main",
     "pages/index/help/main",
     "pages/wallet/main",
     "pages/me/main"
+
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -17,7 +22,7 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "pagePath": "pages/index/help/main",
+        "pagePath": "pages/index/example/dashboard/main",
         "iconPath": "/static/assets/images/tab/about-normal.png",
         "selectedIconPath": "/static/assets/images/tab/about-active.png",
         "text": "充电"
