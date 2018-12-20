@@ -30,6 +30,7 @@ npm start 启动监听文件改动
 1. 小程序工具更新最新 
 2. 导入newlife_yun_charin/dist/wx 
 3. 开启 es6->es5
+4. 关闭合法域名验证
 
 #### vant ui 体验小程序
 ![vant-weapp](https://camo.githubusercontent.com/8259251e8b3b41536eb90545f0f7f1c366e60909/68747470733a2f2f696d672e797a63646e2e636e2f76616e742d77656170702f7172636f64652d3230313830383130313131342e6a7067)
