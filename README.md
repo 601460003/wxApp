@@ -42,7 +42,7 @@ npm start 启动监听文件改动
 this.$http.get(url).then(e=>{})
 ```
 
-### 添加公共样式
+~~### 添加公共样式~~
 ```
 index.vue中 使用 @import @/static/assets/css/public.css
 ```
