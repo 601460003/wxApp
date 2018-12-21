@@ -1,17 +1,7 @@
 {
   "pages": [
     "pages/index/example/dashboard/main",
-    "pages/index/example/button/main",
-    "pages/index/example/cell/main",
-    "pages/index/example/icon/main",
-    "pages/index/example/checkbox/main",
-    "pages/index/example/field/main",
-    "pages/index/example/toast/main",
-    "pages/index/example/datetime-picker/main",
-    "pages/index/example/nav-bar/main",
-    "pages/index/example/card/main",
-    "pages/index/example/radio/main",
-    "pages/index/example/collapse/main",
+
     "pages/index/help/main",
     "pages/wallet/main",
     "pages/me/main"

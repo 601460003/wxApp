@@ -29,7 +29,7 @@ npm start 启动监听文件改动
 
 #### 小程序操作
 1. 小程序工具更新最新 
-2. 导入newlife_yun_charin/dist/wx 
+2. 导入newlife_yun_charin/dist 
 3. 开启 es6->es5
 4. 关闭合法域名验证
 
@@ -45,4 +45,13 @@ this.$http.get(url).then(e=>{})
 ### 添加公共样式
 ```
 index.vue中 使用 @import @/static/assets/css/public.css
+```
+
+
+### 通过命令行方式创建页面(推荐)
+```
+cd newlife_yun_charing
+node build/createTemplate.js -n '测试' -p test/test
+-n xx 页面导航名字
+-p test/test 页面将创建在/src/pages/test/test/ 下面
 ```
