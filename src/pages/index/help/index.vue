@@ -2,7 +2,7 @@
   <div class="container">
     <van-collapse v-model="activeName"  @change="onChange">
       <van-collapse-item title="如何注册" name="1">
-        第一场使用。。。
+        <a href="/pages/index/example/dashboard/main" class="go-to">去vant weapp ui 展示页面</a>
       </van-collapse-item>
       <van-collapse-item title="如何充值" name="2">
         在新能源公众号内：，、点击．
@@ -35,8 +35,6 @@ export default {
     this.$http.get("m/me/getMe4m").then((d)=>{
       //输出请求数据
       console.log(d.data)
-      //输出响应头
-      console.log(d.header)
     }).catch(err=>{
       console.log(err.status,err.message)
     })
@@ -46,5 +44,8 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
+  .go-to{
+    border: 1px solid;
+  }
 </style>
