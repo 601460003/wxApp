@@ -32,14 +32,14 @@ export default {
     }
   },
   created(){
-    this.$http.get("m/me/getMe4m").then((d)=>{
-      //输出请求数据
-      console.log(d.data)
-      //输出响应头
-      console.log(d.header)
-    }).catch(err=>{
-      console.log(err.status,err.message)
-    })
+    // this.$http.get("m/me/getMe4m").then((d)=>{
+    //   //输出请求数据
+    //   console.log(d.data)
+    //   //输出响应头
+    //   console.log(d.header)
+    // }).catch(err=>{
+    //   console.log(err.status,err.message)
+    // })
 
   }
 

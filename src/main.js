@@ -1,5 +1,7 @@
 import Vue from "vue";
-import App from "./App";
+import App from "@/App";
+import vueBus from 'vue-bus'
+import storage from '@/storage'
 //配置flyio
 var Fly = require("flyio/dist/npm/wx");
 var fly = new Fly;
@@ -10,12 +12,15 @@ fly.interceptors.request.use((config,promise)=>{
   return config;
 })
 //配置请求基地址
-//
 fly.config.baseURL = process.env.BASE_URL;
 Vue.prototype.$http = fly;
+// Vue.prototype.$bus = eventBus;
 
 Vue.config.productionTip = false;
-App.mpType = "app";
-
-const app = new Vue(App);
+Vue.use(vueBus);
+Vue.prototype.$storage = new storage();
+const app = new Vue({
+  mpType: 'app',
+  ...App
+})
 app.$mount();

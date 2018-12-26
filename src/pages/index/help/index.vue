@@ -36,9 +36,15 @@ export default {
       //输出请求数据
       console.log(d.data)
     }).catch(err=>{
-      console.log(err.status,err.message)
+      // console.log(err.status,err.message)
     })
 
+    console.log('==========================')
+    this.$bus.on('AeventName', params => {
+      console.log('####', params)
+    })
+    this.$storage.setItem('init',{app:'weapp',version:'1.0.0'})
+    // console.log(this.$bus)
   }
 
 }

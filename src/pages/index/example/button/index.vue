@@ -39,6 +39,16 @@
     </div>
   </div>
 </template>
+<script>
+  export default {
+    created(){
+
+      this.$bus.$emit('AeventName', {
+        test: 'test'
+      })
+    }
+  }
+</script>
 <style>
   @import "main.css";
 </style>
