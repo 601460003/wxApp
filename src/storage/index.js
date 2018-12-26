@@ -16,16 +16,17 @@ class Storage {
   /**
    *  获取缓存
    * @param key
+   * @return
    */
   getItem(key) {
-    wx.getStorageSync(key);
+    return wx.getStorageSync(key);
   }
 
   /**
    * 清除缓存
    * @param key
    */
-  clear(key){
+  clean(key){
     wx.removeStorageSync(key);
   }
 }
