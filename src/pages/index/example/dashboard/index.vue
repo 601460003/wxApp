@@ -38,10 +38,10 @@
                 path: "/icon",
                 title: "Icon 图标"
               },
-              // {
-              //   path: "/col",
-              //   title: "Layout 布局"
-              // },
+              {
+                path: "/col",
+                title: "Layout 布局"
+              },
               // {
               //   path: "/popup",
               //   title: "Popup 弹出层"

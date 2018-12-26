@@ -2,7 +2,7 @@
   <div class="container">
     <van-collapse v-model="activeName"  @change="onChange">
       <van-collapse-item title="如何注册" name="1">
-        <a href="/pages/index/example/dashboard/main" class="go-to">去vant weapp ui 展示页面</a>
+        <van-button type="primary" class="demo-margin-right" @click="goto">vant weapp ui 展示页面</van-button>
       </van-collapse-item>
       <van-collapse-item title="如何充值" name="2">
         在新能源公众号内：，、点击．
@@ -29,7 +29,12 @@ export default {
   methods: {
     onChange(e){
       this.activeName = [e.target["1"]];
+    },
+    goto(){
+      // <a href="/pages/index/example/dashboard/main" class="go-to">去vant weapp ui 展示页面</a>
+      this.$nav.link('/pages/index/example/dashboard/main');
     }
+
   },
   created(){
     this.$http.get("m/me/getMe4m").then((d)=>{
@@ -45,7 +50,8 @@ export default {
     })
     this.$storage.setItem('init',{app:'weapp',version:'1.0.0'})
     // console.log(this.$bus)
-  }
+  },
+
 
 }
 </script>
