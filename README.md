@@ -1,4 +1,4 @@
-# 云充微信小程序
+# 微信小程序基础框架
 
 ### mpvue 小程序框架 vant-weapp ui框架 网络请求框架 flyio
 
@@ -55,3 +55,9 @@ node build/createTemplate.js -n '测试' -p test/test
 -n xx 页面导航名字
 -p test/test 页面将创建在/src/pages/test/test/ 下面
 ```
+
+### master
+master分支仅用于完成基本的组件封装，工具类的封装 ，再合并到其他分支 
+
+### 云充微信小程序 
+云充微信小程序 需要切换到 yun-charging 分支进行开发 
