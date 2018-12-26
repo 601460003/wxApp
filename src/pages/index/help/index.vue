@@ -32,7 +32,7 @@ export default {
     },
     goto(){
       // <a href="/pages/index/example/dashboard/main" class="go-to">去vant weapp ui 展示页面</a>
-      this.$nav.link('/pages/index/example/dashboard/main');
+      this.$nav.link('/pages/index/example/dashboard/main',{test:1111});
     }
 
   },

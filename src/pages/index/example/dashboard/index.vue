@@ -210,7 +210,8 @@
 
       };
     },
-    created(){
+    onLoad(e){
+      console.log(e)
     }
 
   };
