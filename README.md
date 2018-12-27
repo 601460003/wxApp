@@ -81,3 +81,14 @@ this.$storage.clean(key) 删除缓存值
 mpvue承载了小程序的生命周期 可以采用小程序生命周期的方法
 接受页面传值参数 采用onLoad(e){console.log(e)}
 ```
+
+
+### 填写地理位置用途说明
+```
+app.json
+
+ "permission": {
+    "scope.userLocation": {
+      "desc": "导航"
+    }
+```

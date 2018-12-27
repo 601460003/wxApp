@@ -1,6 +1,6 @@
-import Storage from "../storage";
-
-
+/**
+ * 页面跳转工具类
+ */
 class Navigate {
   constructor() {
     this.__skill = {
@@ -18,11 +18,11 @@ class Navigate {
    * @param url 路径
    * @param data 参数
    */
-  link(url, data) {
+  link(url, data,type='to') {
     var p = "";
     p = this.__splice(data, p);
 
-    wx[this.__skill["to"]]({
+    wx[this.__skill[type]]({
       url: url + p
     });
   };
@@ -61,11 +61,7 @@ class Navigate {
    * @param data
    */
   reLaunch(url, data) {
-    var p = "";
-    p = this.__splice(data, p);
-    wx[this.__skill["tab"]]({
-      url: url + p
-    });
+    this.link(url, data,'reLaunch')
   }
 
   /**
@@ -74,11 +70,7 @@ class Navigate {
    * @param data
    */
   redirectTo(url, data) {
-    var p = "";
-    p = this.__splice(data, p);
-    wx[this.__skill["tab"]]({
-      url: url + p
-    });
+    this.link(url, data,'redirectTo')
   }
 
   /**
