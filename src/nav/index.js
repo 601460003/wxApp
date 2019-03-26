@@ -32,7 +32,7 @@ class Navigate {
    * @param delta 页面数
    */
   back(delta) {
-    if (typeof  data === "number") {
+    if (typeof  delta === "number") {
       wx[this.__skill["back"]]({
         delta: delta
       });
@@ -82,6 +82,7 @@ class Navigate {
    */
   __splice(data, p) {
     if (!data && data != "undefined") {
+      //
     } else if (typeof data === "String") {
       p = "?" + data;
     } else if (typeof data === "object") {

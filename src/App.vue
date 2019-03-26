@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container {
   height: 100%;
   display: flex;
@@ -27,5 +27,8 @@ export default {
   -moz-transition: width 2s;
   -webkit-transition: width 2s;
   -o-transition: width 2s;
+}
+page {
+  background-color: rgba(250, 71, 146, 0.9);
 }
 </style>

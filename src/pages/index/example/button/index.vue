@@ -1,9 +1,9 @@
 <template>
   <div>
     <div>
-      <div class="title">按钮类型</div>
+      <div class="title" >按钮类型222</div>
       <div class="row">
-        <van-button type="primary" class="demo-margin-right">主要按钮</van-button>
+        <van-button type="primary" class="demo-margin-right" @click="clickMy">主要按钮</van-button>
         <van-button type="danger">危险按钮</van-button>
       </div>
       <van-button class="demo-margin-right">默认按钮</van-button>
@@ -46,6 +46,11 @@
       this.$bus.$emit('AeventName', {
         test: 'test'
       })
+    },
+    method:{
+      clickMy(){
+        alert("asd")
+      }
     }
   }
 </script>

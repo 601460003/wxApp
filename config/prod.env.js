@@ -1,4 +1,4 @@
 module.exports = {
   NODE_ENV: '"production"',
-  BASE_URL:'"http://test.jxnewlife.com/"'
+  // BASE_URL:'"http://test.jxnewlife.com/"'
 }
