@@ -3,7 +3,7 @@
     <van-tabs :active="activeName">
       <!--//全部商品-->
       <van-tab title="全部">
-       <div class="container" v-for="(shop,index) in allShops" :key="index" v-if="mobileID">
+       <div class="container" v-for="(shop,index) in __allShops" :key="index" v-if="mobileID">
          <!--订单号-->
          <header class="order-number" >
            <span class="order-number-left">订单号：</span>
@@ -139,6 +139,7 @@
         this.$http.get('home/getOrderList?'+'&sessionId='+ this.mobileID)
           .then(res=>{
             this.allShops=res.data.data
+            console.log(this.allShops)
           })
       }else {
         this.allShops=''
@@ -162,6 +163,13 @@
         this.alreadyShop=''
       }
     },
+    // 新订单排序
+    computed:{
+      __allShops: function() {
+        return this.allShops.sort((a,b)=>b.id-a.id);//新订单排第头
+      }
+    },
+
 
   }
 </script>

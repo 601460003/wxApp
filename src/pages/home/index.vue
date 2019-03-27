@@ -50,11 +50,13 @@
           <span class="box-price">￥{{totalMoney}}</span>
         </div>
       </van-submit-bar>
+      <van-toast id="van-toast"/>
     </footer>
   </div>
 </template>
 
 <script>
+  import Toast from '@/../static/vant/toast/toast'
   export default {
     data() {
       return{
@@ -110,7 +112,7 @@
         };
         this.$http.post('home/addOrder',shopMess)
           .then(res=>{
-             console.log('下单成功')
+            Toast('下单成功');
             if(res.data.code===100){
               this.$http.get('home/getAllCar?sessionId='+this.mobileID)
                 .then(res=>{

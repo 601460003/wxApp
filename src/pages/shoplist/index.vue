@@ -57,10 +57,12 @@
         <van-goods-action-button text="立即购买" />
       </van-goods-action>
     </div>
+    <van-toast id="van-toast"/>
   </div>
 </template>
 
 <script>
+  import Toast from '@/../static/vant/toast/toast'
   export default {
 
     onLoad(op) {
@@ -131,10 +133,10 @@
       if(this.mobileID){
         this.$http.post('home/addCar',shopping)
           .then(res=>{
-            console.log(res)
+            Toast('添加购物车成功');
           })
       }else{
-          console.log('请登录')
+        Toast('你还没登录');
       }
       },
       __size(){
