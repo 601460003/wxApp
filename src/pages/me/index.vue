@@ -69,6 +69,7 @@
 
 <script>
   import Dialog from '../../../static/vant/dialog/dialog';
+  import Toast from '@/../static/vant/toast/toast';
   export default {
    onShow(){
       var user=this.$storage.getItem('user');

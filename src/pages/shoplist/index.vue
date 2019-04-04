@@ -58,11 +58,13 @@
       </van-goods-action>
     </div>
     <van-dialog id="van-dialog" />
+    <van-toast id="van-toast"/>
   </div>
 </template>
 
 <script>
   import Dialog from '../../../static/vant/dialog/dialog';
+  import Toast from '@/../static/vant/toast/toast'
   export default {
 
     onLoad(op) {
@@ -132,12 +134,10 @@
       if(this.mobileID){
         this.$http.post('home/addCar',shopping)
           .then(res=>{
-            console.log(res)
+            Toast("添加成功")
           })
       }else{
-        Dialog.alert({
-          message: '请登录'
-        })
+        Toast("请登录")
       }
       },
       __size(){

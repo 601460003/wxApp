@@ -5,6 +5,7 @@
     "van-goods-action-icon": "/static/vant/goods-action-icon/index",
     "van-goods-action-button": "/static/vant/goods-action-button/index",
     "van-stepper": "/static/vant/stepper/index",
-    "van-dialog": "/static/vant/dialog/index"
+    "van-dialog": "/static/vant/dialog/index",
+    "van-toast": "/static/vant/toast/index"
   }
 }
