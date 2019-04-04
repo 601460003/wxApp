@@ -1,7 +1,7 @@
 <template>
   <div class="login-box">
     <div class="login-img">
-      <img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2692288157,3206351884&fm=26&gp=0.jpg"/>
+      <img src="https://ww1.sinaimg.cn/large/007i4MEmgy1g1f1sfb86pj30ao06z3yq.jpg"/>
     </div>
     <!--<div class="login-type active">微信登录</div>-->
     <!--<div class="login-type">邮箱账号登录</div>-->
@@ -27,11 +27,11 @@
     margin: 30rpx;
   }
   .login-img{
-    margin-top: 150rpx;
+    margin-top: 50rpx;
   }
   .login-img img{
     width: 100%;
-    height: 300rpx;
+    height: 400rpx;
     border-radius: 15rpx;
   }
   .login-type{

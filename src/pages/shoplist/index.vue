@@ -75,7 +75,6 @@
           shopList.categorys.forEach(item=>{
             if(item.type == 1){
               colors.push(item);
-              console.log(colors)
             }
             else{
               sizes.push(item)

@@ -10,11 +10,11 @@
           <van-field
             center
             clearable
-            placeholder="请输入短信验证码"
+            placeholder="请输入登录密码"
             border="false "
             use-button-slot
           >
-            <van-button slot="button" size="small" type="primary">发送验证码</van-button>
+            <!--<van-button slot="button" size="small" type="primary">发送验证码</van-button>-->
           </van-field>
         </van-cell-group>
       </div>
@@ -105,7 +105,7 @@
     display: none;
   }
   .mobile-login-btn button{
-    background:#999 ;
+    background:#1989fa ;
     font-size: 29rpx;
     color: white;
     margin-top: 40rpx;

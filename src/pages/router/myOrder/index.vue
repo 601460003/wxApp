@@ -162,6 +162,16 @@
         this.alreadyShop=''
       }
     },
+<<<<<<< master
+=======
+    // 新订单排序
+    // computed:{
+    //   __allShops() {
+    //     return this.allShops.sort((a,b)=>a.id-b.id);//新订单排第头
+    //   }
+    // },
+
+>>>>>>> local
 
   }
 </script>

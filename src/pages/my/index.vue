@@ -13,11 +13,11 @@
    </header>
   <!--轮播图-->
    <article class="banner">
-       <!--<van-swipe :autoplay="3000" indicator-color="white" style="height: 200px">-->
-         <!--<van-swipe-item v-for="(img,index) in bannerList" :key="index" >-->
-           <!--<img :src="img.poster" width="100%" height="200px"/>-->
-         <!--</van-swipe-item>-->
-       <!--</van-swipe>-->
+     <!--<swiper autoplay interval="3000" circular indicator-dots>-->
+       <!--<swiper-item >-->
+         <!--<image   src="http://t1.aixinxi.net/o_1d625hkgb1d8k1ulmr2gue8jgna.jpg-w.jpg" style="width: 100%;height:400rpx"></image>-->
+       <!--</swiper-item>-->
+     <!--</swiper>-->
      <img src="http://t1.aixinxi.net/o_1d625hkgb1d8k1ulmr2gue8jgna.jpg-w.jpg" />
    </article>
    <!--8小时快速发货-->

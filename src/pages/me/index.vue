@@ -8,9 +8,9 @@
         <span @click="login" v-else="!mobile">登录/注册</span>
       </div>
     </div>
-    <div class="logo-right">
-      <img src="http://img4.imgtn.bdimg.com/it/u=430635927,4207059803&fm=26&gp=0.jpg"/>
-    </div>
+    <!--<div class="logo-right">-->
+      <!--<img src="http://img4.imgtn.bdimg.com/it/u=430635927,4207059803&fm=26&gp=0.jpg"/>-->
+    <!--</div>-->
     <!--导航栏-->
     <van-cell   is-link @click="allShop">
       <div slot="title"  class="icon-font">我的订单 </div>
@@ -46,15 +46,15 @@
     <!--分割-->
     <div class="spilt"></div>
     <!--我的积分-->
-    <van-cell    is-link >
+    <van-cell    is-link  @click="myIntegral">
       <div slot="title" class="icon-font">我的积分 </div>
       <div slot="icon" ><van-icon name="points" size="42rpx" /></div>
     </van-cell>
-    <van-cell   is-link>
+    <van-cell   is-link @click="myCoupons">
       <div slot="title" class="icon-font">我的优惠卷 </div>
       <div slot="icon" ><van-icon name="balance-list-o" size="42rpx" /></div>
     </van-cell>
-    <van-cell  is-link>
+    <van-cell  is-link @click="myService">
       <div slot="title" class="icon-font">在线客服 </div>
       <div slot="icon" ><van-icon name="service-o" size="42rpx" /></div>
     </van-cell>
@@ -63,10 +63,12 @@
       <div slot="icon"><van-icon name="question-o" size="42rpx" /></div>
     </van-cell>
     <button class="over" v-if="mobile" @click="overEnter">退出登录</button>
+    <van-dialog id="van-dialog" />
   </div>
 </template>
 
 <script>
+  import Dialog from '../../../static/vant/dialog/dialog';
   export default {
    onShow(){
       var user=this.$storage.getItem('user');
@@ -111,6 +113,21 @@
       },
       helpOther(){
         this.$nav.link('/pages/router/helpother/main');
+      },
+      myService(){
+        Dialog.alert({
+          message: '客服热线：0760-22821552'
+        })
+      },
+      myIntegral(){
+        Dialog.alert({
+          message: '你的积分为0'
+        })
+      },
+      myCoupons(){
+        Dialog.alert({
+          message: '暂无优惠卷'
+        })
       }
     },
 
