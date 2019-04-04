@@ -162,8 +162,7 @@
         this.alreadyShop=''
       }
     },
-<<<<<<< master
-=======
+
     // 新订单排序
     // computed:{
     //   __allShops() {
@@ -171,7 +170,7 @@
     //   }
     // },
 
->>>>>>> local
+
 
   }
 </script>

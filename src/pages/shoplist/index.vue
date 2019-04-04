@@ -9,7 +9,7 @@
      <div class="shop-content">
        <p><span class="shop-content-header">自营</span>{{shopList.describe}}</p>
      </div>
-     <p><span class="shopping-time">此商品于2019-03-10,00点参加闪购特卖,</span></p>
+     <p><span class="shopping-time">此商品于2019-05-10,00点参加闪购特卖,</span></p>
      <div class="shopping-price-box">
        <span class="shopping-price">￥{{shopList.price}}</span>
        <span style="position: absolute;right: 10px;color: #e4393c">好评度98.7%</span>
@@ -57,10 +57,12 @@
         <van-goods-action-button text="立即购买" />
       </van-goods-action>
     </div>
+    <van-dialog id="van-dialog" />
   </div>
 </template>
 
 <script>
+  import Dialog from '../../../static/vant/dialog/dialog';
   export default {
 
     onLoad(op) {
@@ -133,7 +135,9 @@
             console.log(res)
           })
       }else{
-          console.log('请登录')
+        Dialog.alert({
+          message: '请登录'
+        })
       }
       },
       __size(){
