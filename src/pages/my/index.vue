@@ -21,11 +21,11 @@
      <img src="http://t1.aixinxi.net/o_1d625hkgb1d8k1ulmr2gue8jgna.jpg-w.jpg" />
    </article>
    <!--8小时快速发货-->
-   <article class="banner-title">
-     <span>8小时内快速发货</span>
-     <span>30天内无忧退货</span>
-     <span>48小时内快速退货</span>
-   </article>
+   <!--<article class="banner-title">-->
+     <!--<span>8小时内快速发货</span>-->
+     <!--<span>30天内无忧退货</span>-->
+     <!--<span>48小时内快速退货</span>-->
+   <!--</article>-->
    <!--商品区-->
    <div >
     <ul class="shop-container">

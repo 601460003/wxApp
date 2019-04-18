@@ -1,0 +1,38 @@
+1.原来props父子传递， 而且可以动态绑定任何
+：title=“数据”  在子组件里面的数据 =赋值的作用
+这是父子之间属性传值的一种手段（只适合父子之间）
+
+2.而其他组件之间的传递就要靠Vuex这个神器==vuex叫做：状态管理模式
+还有computed用的方法可以return一个数组对象！还能直接拿这个方法到v-for里面使用
+
+                   Vuex三贱客：state。mutation。action（a顺）
+
+3.import使用{}引用模块时，必须有如下命名导出为A的export name的代码
+import { A } from './A'                 // 正确，因为A.js中有命名为A的export
+import A, { myA, Something } from './A'===这种方法可以一次性将它们导入，
+而export default 只能一个导出口
+
+4.state（声明）：可以理解为组件中data，专门来存储数据的
+如果想要在组件访问store数据时，直接{{$store.state.?}}
+只要在app实例中 挂载任何元素都可以全局访问 和router一样
+
+5.mutations（喵ta顺=》变化）：定义一个方法相当于库管员 通过commit（“里面的方法名字”）
+使用方法：在mutations文件下定义一个方法
+然后在想调用的组件中（methods）调用这个方法的格式 this.$store.commit('changeM')
+而且mutations中的方法支持2个参数传参，如果想传多个时传参可以是对象
+
+6.getters方法：只负责对外提供数据，不负责修改数据。如果想修改数据，找库管员mutations
+方法和过滤器比较像：过滤器直接返回数据，不能修改。
+其次getters和计算属性也比较像，如果state数值发生改变，对应的getters方法也会重新求值
+
+                         Vuex学习总结
+1.state中的数据，不能直接修改，如果想要修改，必须通过库管员
+2.如果组件像要直接从state上获取数据》需要this.$store.state.?
+3.如果组件，像要修改数据，必须使用库管员提供的方法，需要通过commit
+4.如果store中state
+上的数据，在对外提供的时候，需要做一层包装，那么，推介使用getters
+如果需要使用getters。则用getters
+
+
+
+

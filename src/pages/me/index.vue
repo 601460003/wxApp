@@ -13,7 +13,7 @@
     <!--</div>-->
     <!--导航栏-->
     <van-cell   is-link @click="allShop">
-      <div slot="title"  class="icon-font">我的订单 </div>
+      <div slot="title"  class="icon-font">我的清单 </div>
       <div slot="icon" ><van-icon name="records" size="42rpx" /></div>
     </van-cell>
     <!--评价 导航-->

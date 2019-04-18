@@ -1,0 +1,60 @@
+1.<keep-alive></keep-alive>进行缓存，这样用户每次返回列表的时候
+都能从缓存中快速渲染，而不是重新渲染
+
+3.this.$nextTick：将回调延迟到下次 DOM 更新循环之后执行。在修改数据之后立即使用它，然后等待 DOM 更新
+为了在数据变化之后等待 Vue 完成更新 DOM ，可以在数据变化之后立即使用 Vue.nextTick(callback) 。这样回调函数在 DOM 更新完成后就会调
+
+2.将当前组件的<style>修改为<style scoped>
+
+3.引入组件的步骤：1.采用ES6的import ... from ...语法
+或CommonJS的require()方法引入组件
+
+2、怎么定义vue-router的动态路由？怎么获取传过来的动态参数？ 
+答：在router目录下的index.js文件中，对path属性加上/:id。  使用router对象的params.id
+
+答：首先，组件可以提升整个项目的开发效率。能够把页面抽象成多个相对独立的模块，解决了我们传统项目开发：效率低、难维护、复用性等问题。
+
+然后，使用Vue.extend方法创建一个组件，然后使用Vue.component方法注册组件。子组件需要数据，可以在props中接受定义。而子组件修改好数据后，想把数据传递给父组件。可以采用emit方法。
+1.什么是vue生命周期？答： Vue 实例从创建到销毁的过程，就是生命周期。从开始创建、初始化数据、编译模板、挂载Dom→渲染、更新→渲染、销毁等一系列过程，称之为 Vue 的生命周期。
+2.vue生命周期的作用是什么？答：它的生命周期中有多个事件钩子，让我们在控制整个Vue实例的过程时更容易形成好的逻辑。
+3.vue生命周期总共有几个阶段？答：它可以总共分为8个阶段：创建前/后, 载入前/后,更新前/后,销毁前/销毁后。
+
+1计算属性：对于任何复杂逻辑，你都应当使用计算属性。
+像绑定普通属性一样在模板中绑定计算属性。
+于methods的区别==》计算属性是基于它们的响应式依赖进行缓存的 而方法却没有！
+
+2.以 Vue 为你提供了一种方式来表达“这两个元素是完全独立的
+，不要复用它们”。只需添加一个具有唯一值的 key 属性即可：
+
+3.在v-for遍历时 可以为数组添加方法 
+比如：<li v-for="n in even(numbers)">{{ n }}</li> even就是在methods中定义的方法
+
+4.上述内容可以通过 Vue 的 <component> 元素加一个特殊的 is 特性来实现：nav显示的组件
+
+在它们第一次被创建的时候缓存下来。为了解决这个问题，我们可以用一个 <keep-alive> 元素将其动态组件包裹起来。
+
+所有的 prop 都使得其父子 prop 之间形成了一个单向下行绑定：
+
+过渡动画的api实例：
+  <transition name="fade">
+    <p v-if="show">hello</p>
+  </transition>
+
+.fade-enter-active进入过渡生效时的状态, .fade-leave-active定义离开过渡生效时的状态 {
+  transition: opacity .5s;
+}
+.fade-enter定义进入过渡的开始状态。, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+/* 可以设置不同的进入和离开动画 */
+/* 设置持续时间和动画函数 */
+
+@keyframes animation（an你妹顺）:
+
+
+灯企通面试经验：
+props:[]用于父组件单向传递数据给子组件。
+ref:常用方法
+1.用ref绑定普通元素之后，不需要在获取dom节点，直接在上面的input上绑定ref=自定义名，然后this.$refs.name=？。减少Dom操作
+2.ref 绑定在子组件上，用this.$refs.name=方法名，可以使用父组件的所有方法。

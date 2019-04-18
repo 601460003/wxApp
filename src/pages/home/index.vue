@@ -1,15 +1,15 @@
 <template>
   <div class="shopCar-box">
     <!--头部-->
-  <header class="shopCar-title">
-    <span>8小时内快速发货</span>
-    <span>30天内无忧退货</span>
-    <span>48小时内快速退货</span>
-  </header>
+  <!--<header class="shopCar-title">-->
+    <!--<span>8小时内快速发货</span>-->
+    <!--<span>30天内无忧退货</span>-->
+    <!--<span>48小时内快速退货</span>-->
+  <!--</header>-->
     <!--购物车空空如也/判断是否有商品-->
     <article class="shopCar-car" v-if="shopCarList.length<1">
-      <img src="http://img3.imgtn.bdimg.com/it/u=4214290751,1455904856&fm=26&gp=0.jpg"/>
-      <p>购物车空空如也，去逛逛吧～</p>
+      <!--<img src="http://img3.imgtn.bdimg.com/it/u=4214290751,1455904856&fm=26&gp=0.jpg"/>-->
+      <p>清单空空如也，去逛逛吧～</p>
     </article>
     <!--当有商品的时候-->
     <figure class="shopList-box" v-for="(shop,index) in shopCarList" :key="index">
@@ -38,7 +38,7 @@
     <!--下单-->
     <footer v-if="shopCarList.length>0">
       <van-submit-bar
-        button-text="下单"
+        button-text="开始配送"
         @submit="buyShopOrder"
       >
        <div class="boxRadio-a" >
@@ -189,6 +189,10 @@
     background: #f3f5f7;
     text-align: center;
     height: 350rpx;
+    line-height: 350rpx;
+  }
+  .shopCar-car p{
+
   }
   .shopCar-car img{
     width: 200rpx;

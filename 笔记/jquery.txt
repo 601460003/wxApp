@@ -1,0 +1,90 @@
+                       ：你为什么要使用jQuery？你觉得jquery有哪些好处？
+
+
+1、因为jQuery是轻量级的框架，大小不到30kb
+
+2、它有强大的选择器，出色的DOM操作的封装
+
+3、有可靠的事件处理机制(jQuery在处理事件绑定的时候相当的可靠)
+
+4、完善的ajax(它的ajax封装的非常的好，不需要考虑复杂浏览器的兼容性和XMLHttpRequest对象的创建和使用的问题。)
+
+5、出色的浏览器的兼容性
+
+6、支持链式操作，隐式迭代
+
+7、行为层和结构层的分离，还支持丰富的插件，jquery的文档也非常的丰富
+
+                   ： (document).ready()(document).ready()(functiion({}))方法和window.onload有什么区别？
+
+两个方法的功能相似，但在实行时机方面是有区别的
+
+1、window.onload方法是在网页中所有的元素完全加载到浏览器后才执行
+
+2、$(document).ready() 可以在DOM载入就绪是就对其进行操纵，并调用执行绑定的函数
+
+                    ：你知道jQuery中的选择器吗，有哪些选择器
+大致分为：
+基本选择器，层次选择器，表单选择器
+基本选择器
+：id选择器，标签选择器，类选择器等
+层次选择器：
+如：$("form input") 选择所有的form元素中的input元素 
+$("#main > *")选择id为main的所有子元素
+过滤选择器：
+如：$("tr:first")选择所有tr元素的第一个  $("tr:last")选择所有tr元素的最后一个
+表单选择器：
+如：$(":input")选择所有的表单输入元素 $(":text")选择所有的text的input元素
+
+                  ：jQuery对象和DOM对象是怎样转换的
+jQuery对象是一个包含了dom对象的数组 可以通过jQuery对象[下标]获取dom对象
+将dom对象放入$("")中转为jQuery对象
+
+                   ：jQuery中.get()提交和.get()提交和.post()提交的区别
+
+1、.get()使用GET方法来进行异步提交post()使用POST方法来进行异步提交
+ 
+2、get请求方式将参数跟在url后进行传递用户可见 post请求则是作为http消息的实体内容发送给服务器，用户不可见 
+
+3、post传输数据比get大 
+
+4、get请求的数据会被浏览器缓存 不安全
+
+        说出jQuery中常见的几种函数以及他们的含义是什么?
+??jQuery中常见的函数如下: 
+??
+1)get()取得所有匹配的DOM元素集合. 
+??
+2)get(index)取得其中一个匹配的元素.index表示取得第几个匹配的元素. 
+??
+3)append(content)向每个匹配的元素内部追加内容. 
+?
+?4)after(content)在每个匹配的元素之后插入内容. 
+??
+5)html()/html(var)取得或设置匹配元素的html内容. 
+??
+6)find(expr)搜索所有与指定表达式匹配的元素. 
+??
+7)bind(type,[data],fn)为每个匹配元素的特定事件绑定事件处理函数. 
+??
+8)empty()删除匹配的元素集合中所有的子节点. 
+??
+9)hover(over,out)一个模仿悬停事件(鼠标移动到一个对象上面及移出这个对象)的方法. 
+??
+10)attr(name)取得第一个匹配元素的属性值. 
+??
+11)addClass(class)和removeClass(class)为指定的元素添加或移除样式. 
+??
+12)css(name)访问第一个匹配元素的样式属性. 
+??
+13)ajax([options])通过HTTP请求加载远程数据. 
+??
+14)get(url,[data],[callback],[type])通过远程HTTP GET请求载入信息. 
+?
+?15)post(url,[data],[callback],[type])通过远程HTTP POST请求载入信息. 
+??
+16)load(url,[data],[callback])载入远程HTML文件代码并插入至DOM中.
+
+
+
+

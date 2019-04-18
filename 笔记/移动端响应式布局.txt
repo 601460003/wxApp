@@ -1,0 +1,18 @@
+在<link>引入css样式的时候：直接使用媒体查询
+例子1.<link rel="stylesheet" href="css.css" media="(min-width:500px)" >
+    2.<link rel="stylesheet" href="css.css" media="(max-width:500px)" >
+通过媒体查询media判断 
+一开始先写一套公用的样式表。然后在写一套手机端的样式表（当小于500时用来覆盖一些样式）
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">配合媒体查询
+                                     设备的宽度
+<meta>标签用来告诉告诉搜索引擎
+meta 元素被用于规定页面的描述、关键词、文档的作者、最后修改时间以及其他元数据。
+name属性： <meta name='参数' content='具体的参数值'>
+
+
+

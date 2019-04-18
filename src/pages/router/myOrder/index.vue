@@ -6,7 +6,7 @@
        <div class="container" v-for="(shop,index) in allShops" :key="index" v-if="mobileID">
          <!--订单号-->
          <header class="order-number" >
-           <span class="order-number-left">订单号：</span>
+           <span class="order-number-left">商品号：</span>
            <span class="order-number-right">{{shop.num}}</span>
            <span class="order-number-state"></span>
          </header>

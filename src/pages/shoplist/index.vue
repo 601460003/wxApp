@@ -7,16 +7,16 @@
      </div>
      <!--详情-->
      <div class="shop-content">
-       <p><span class="shop-content-header">自营</span>{{shopList.describe}}</p>
+       <p><span class="shop-content-header">华牌</span>{{shopList.describe}}</p>
      </div>
-     <p><span class="shopping-time">此商品于2019-05-10,00点参加闪购特卖,</span></p>
+     <!--<p><span class="shopping-time">此商品于2019-05-10,00点,</span></p>-->
      <div class="shopping-price-box">
        <span class="shopping-price">￥{{shopList.price}}</span>
        <span style="position: absolute;right: 10px;color: #e4393c">好评度98.7%</span>
      </div>
-     <div class="shop-vip">
-       <p><span>PLUS</span>开通会员，此商品立省￥4.00</p>
-     </div>
+     <!--<div class="shop-vip">-->
+       <!--<p><span>PLUS</span>开通会员，此商品立省￥4.00</p>-->
+     <!--</div>-->
    </div>
     <div class="spilt"></div>
     <!--尺寸 颜色 大小-->
@@ -49,16 +49,18 @@
      </div>
      <div>
    </div>
-      <van-goods-action>
-        <van-goods-action-icon icon="shop-o" text="店铺" />
-        <van-goods-action-icon icon="chat-o" text="客服" />
-        <van-goods-action-icon icon="cart-o"  text="购物车"/>
-        <van-goods-action-button text="加入购物车" type="warning" @click="getShopCar" />
-        <van-goods-action-button text="立即购买" />
-      </van-goods-action>
+      <!--<van-goods-action>-->
+        <!--<van-goods-action-icon icon="shop-o" text="店铺" />-->
+        <!--<van-goods-action-icon icon="chat-o" text="客服" />-->
+        <!--<van-goods-action-icon icon="cart-o"  text="购物栏"/>-->
+        <!--<van-goods-action-button text="加入购物栏" type="warning" @click="getShopCar" />-->
+        <!--<van-goods-action-button text="立即预定" />-->
+      <!--</van-goods-action>-->
+
     </div>
     <van-dialog id="van-dialog" />
     <van-toast id="van-toast"/>
+    <button class="addCar" @click="getShopCar">预约</button>
   </div>
 </template>
 
@@ -250,5 +252,12 @@
     border-top: 0.02667rem solid rgba(7, 17, 27, 0.1);
     border-bottom: 0.02667rem solid rgba(7, 17, 27, 0.1);
     background: #f3f5f7;
+  }
+  .addCar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f44;
+    color: #fff;
   }
 </style>

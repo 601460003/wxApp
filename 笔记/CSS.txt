@@ -1,0 +1,86 @@
+         　　   问：link 和@import 的区别是?
+（1）、link属于XHTML标签，而@import是CSS提供的;
+（2）、页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;
+（3）、import只在IE5以上才能识别，而link是XHTML标签，无兼容问题;
+（4）、link方式的样式的权重 高于@import的权重
+             　问：为什么要初始化CSS样式。
+因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异。
+Html代码seo优化最佳布局
+当然，初始化样式会对SEO有一定的影响，但鱼和熊掌不可兼得，但力求影响最小的情况下初始化。
+                问：介绍一下标准的CSS的盒子模型？低版本IE的盒子模型有什么不同的？
+  （1）有两种， IE 盒子模型、W3C 盒子模型；
+  （2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border)；
+  （3）区  别： IE的content部分把 border 和 padding计算了进去;
+
+                 **重新理解position的关系**（8个颜色尝试得出的结论）
+1.absolute：生成绝对定位的元素（对应的是寻找第一个带有position的父级元素）===记住是父级
+如果父级没有position，直接相对于body进行定位
+2.relative：生成相对定位的元素，（相对于其正常位置进行定位。（就是一开始在什么位置就什么位置开始））
+3.fixed ：生成绝对定位的元素，（相对于浏览器窗口进行定位。）直接浏览器定位了！
+4.inherit：规定从父元素继承 position 属性的值（父级是怎么样 它就怎么样）
+
+
+                 问：CSS3有哪些新特性？
+    新增各种CSS选择器	（: not(.input)：所有 class 不是“input”的节点）
+    圆角		    （border-radius:8px）
+    多列布局	    （multi-column layout）
+    阴影和反射	（Shadow\Reflect）
+    文字特效		（text-shadow、）
+    文字渲染		（Text-decoration）
+    线性渐变		（gradient）
+    旋转		 	（transform）
+    缩放,定位,倾斜,动画,多背景
+    例如:transform:\scale(2,3)\ translate(0px,-30px)\ skew(-9deg,0deg)\Animation:
+              问：请解释一下为什么需要清除浮动？清除浮动的方式
+    清除浮动是为了清除使用浮动元素产生的影响。浮动的元素，高度会塌陷，而高度的塌陷使我们页面后面的布局不能正常显示。
+
+               问： 移动端的布局用过媒体查询吗？
+假设你现在正用一台显示设备来阅读这篇文章，同时你也想把它投影到屏幕上，或者打印出来， 而显示设备、屏幕投影和打印等这些媒介都有自己的特点，CSS就是为文档提供在不同媒介上展示的适配方法
+当媒体查询为真时，相关的样式表或样式规则会按照正常的级联规被应用。 当媒体查询返回假， 标签上带有媒体查询的样式表 仍将被下载 （只不过不会被应用）。
+包含了一个媒体类型和至少一个使用 宽度、高度和颜色等媒体属性来限制样式表范围的表达式。 CSS3加入的媒体查询使得无需修改内容便可以使样式应用于某些特定的设备范围。
+
+             问：经常遇到的浏览器的兼容性有哪些？原因，解决方法是什么，常用hack的技巧 ？
+1.这个针对不同的浏览器写不同的CSS code的过程，就叫CSS hack,也叫写CSS hack
+2.* 浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。
+ 因为浏览器的兼容问题，不同浏览器对有些标签的默认值是不同的，如果没对CSS初始化往往会出现浏览器之间的页面显示差异
+<style> @media (min-width: 700px) and (orientation: landscape){ .sidebar { display: none; } } </style>
+
+                            2:href与src的区别
+1、请求资源类型不同：href 指向网络资源所在位置，建立和当前元素（锚点）或当前文档（链接）之间的联系。
+在请求 src 资源时会将其指向的资源下载并应用到文档中，比如 JavaScript 脚本，img 图片；
+2、作用结果不同：href 用于在当前文档和引用资源之间确立联系；src 用于替换当前内容；
+
+常用动画单词
+1：@keyframess（kiss friend）规则是创建动画
+配合animation（n 你媚顺）：规定动画的名字+时长
+关键词 "from" 和 "to"，等同于 0% 和 100%==>等同于开始--完成
+
+2：translate（X,Y）位移
+3：rotate(no蹄s)旋转  顺时针加角度deg
+4：scale(X.Y)变大  （s鸡o）
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+           可视区域            宽=设备的宽度         初始缩放比例
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -62,9 +62,9 @@
       },
       {
         "pagePath":"pages/home/main",
-        "iconPath": "/static/assets/images/tab/car.png",
-        "selectedIconPath": "/static/assets/images/tab/car-o.png",
-        "text": "购物车"
+        "iconPath": "/static/assets/images/tab/icon_calendar.png",
+        "selectedIconPath": "/static/assets/images/tab/icon_calendar (1).png",
+        "text": "预约"
       },
       {
         "pagePath":"pages/me/main",
